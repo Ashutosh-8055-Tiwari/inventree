@@ -1,112 +1,97 @@
-import Image from "next/image";
+"use client";
+
+import { Navbar } from "./components/Navbar";
+import Slideshow from "./components/SlideShow";
+import { Slider } from "./components/Slider";
+import image1 from "../public/assets/aaf7d3340fbc40dd0615397d8f74d8c8.png";
+import { Cards } from "./components/Cards";
+import { CardData } from "./utils/constant";
+import { WhyInventree } from "./components/WhyInventree";
+import { ContactUs } from "./components/ContactUs";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex flex-col items-center justify-between w-full">
+      <div className="bg-[#FFFFFF] w-full relative p-4">
+
+        <Navbar />
+
+        <Slider />
+
+        <Slideshow />
+
+        <div className="bg-[#000000] text-white p-6 flex flex-col lg:flex-row justify-between h-auto lg:h-[491px] mt-14 font-poppins">
+          <div className="space-y-6 w-full lg:w-[50%] lg:pr-8">
+            <Link href={"/pages/partner-with-us"} className="text-lg font-bold uppercase text-[#1BB275]">Partner with us</Link>
+            <h1 className="text-2xl font-bold">Welcome to Inventree, where partnership means more than just collaboration.</h1>
+            <p className="text-[#999999]">
+              It's about building lasting relationships. Our success hinges on nurturing strong, long-term connections that fuel your growth journey. By joining forces with us, you gain access to a dedicated team committed to empowering your business with cutting-edge technology solutions.
+            </p>
+            <p className="text-[#999999]">
+              Together, we'll accelerate your growth and deliver unparalleled value to your customers. Partner with Inventree today and unlock the potential for success like never before.
+            </p>
+          </div>
+          <div className="flex flex-col items-center lg:items-end justify-between">
+            <button className="bg-[#1BB275] text-white font-bold text-xl lg:text-2xl py-2 px-4 rounded inline-flex justify-center items-center h-[3rem] lg:h-[4rem] w-[80%] lg:w-[378px] mb-4 lg:mb-0">
+              <span>Partner with us</span>
+              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+            <img src={image1.src} alt="Inventree Logo" className="mb-4 h-[298px] w-[378px]" />
+          </div>
         </div>
-      </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className="max-w-4xl mx-auto py-10 px-4 font-poppins\">
+          <div className="text-center mb-10">
+            <h1 className="text-3xl font-bold bg-[#070606] text-[#1BB275] p-4 dark:text-white">Discover the Future of Procurement</h1>
+            <div className="flex flex-col justify-center items-center">
+              <p className="mt-2 text-2xl text-[#1BB275] font-[600]">SERVICES</p>
+              <p className="text-[#102C5B] font-bold text-3xl mt-2 w-full lg:w-[50%]">We Provide Best Solutions & Procurement Services</p>
+            </div>
+          </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <Cards props={CardData} />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <WhyInventree />
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className="w-full bg-[#000000] text-white p-8 lg:p-16 mt-28 font-roboto ">
+          <h1 className="text-3xl font-bold mb-16 text-[#1BB275] ">Our AI Powered Dashboard</h1>
+          <div className="flex items-center justify-center flex-wrap gap-16">
+            <div className="flex flex-col gap-16 flex-wrap">
+              <div className="bg-zinc-700 h-40 w-[30rem] rounded-lg p-4 "></div>
+              <div className="bg-zinc-700 h-40 w-[30rem] rounded-lg p-4 mt-4"></div>
+            </div>
+            <div className="flex flex-col gap-16 flex-wrap">
+              <div className="bg-zinc-700 h-40 w-[30rem] rounded-lg p-4"></div>
+              <div className="bg-zinc-700 h-40 w-[30rem] rounded-lg p-4 mt-4"></div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div className="bg-[#FFFFFF] p-8 lg:p-16 mt-32">
+    <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-2xl lg:text-3xl font-semibold text-[#0047FF] mb-8 font-sans">With cutting-edge AI technology, we're evolving swiftly to deliver unparalleled services to our customers.</h1>
+        <p className="text-[#000000] mb-16 font-roboto">Embracing the rapid advancements in AI, we're dedicated to continuously enhancing our services, ensuring seamless experiences for our valued customers. Stay ahead of the curve with Inventree's innovative solutions.</p>
+        <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-stretch gap-4">
+            <Link href={"/pages/partner-with-us"} className="bg-[#1BB275] font-poppins text-white font-bold text-xl px-6 py-2 rounded-md lg:w-[20rem] h-[3rem] lg:h-[3.5rem] mb-4 lg:mb-0">Know our vendors →</Link >
+            <Link href={"/pages/partner-with-us"} className="bg-[#1BB275] font-poppins text-white font-bold text-xl px-6 py-2 rounded-md lg:w-[20rem] h-[3rem] lg:h-[3.5rem]">Know our values →</Link >
+        </div>
+    </div>
+</div>
+
+
+        <ContactUs />
+
       </div>
     </main>
   );

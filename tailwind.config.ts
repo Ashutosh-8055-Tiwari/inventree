@@ -7,6 +7,11 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'poppins': ['Poppins', 'ui-sans-serif', 'system-ui'],
+      'roboto': ['Roboto', 'ui-sans-serif', 'system-ui'],
+      'sans': ['Shanti', 'ui-sans-serif', 'system-ui'],
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
