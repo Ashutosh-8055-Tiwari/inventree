@@ -23,12 +23,12 @@ export default function Home() {
 
         <div className="bg-[#000000] text-white p-6 flex flex-col lg:flex-row justify-between h-auto lg:h-[491px] mt-14 font-poppins">
           <div className="space-y-6 w-full lg:w-[50%] lg:pr-8">
-            <Link href={"/pages/partner-with-us"} className="text-lg font-bold uppercase text-[#1BB275]">Partner with us</Link>
-            <h1 className="text-2xl font-bold">Welcome to Inventree, where partnership means more than just collaboration.</h1>
-            <p className="text-[#999999]">
+            <Link href={"/pages/partner-with-us"} className="text-xl font-bold uppercase text-[#1BB275]">Partner with us</Link>
+            <h1 className="text-3xl font-bold  text-justify">Welcome to Inventree, where partnership means more than just collaboration.</h1>
+            <p className="text-[#999999] text-lg text-justify">
               It's about building lasting relationships. Our success hinges on nurturing strong, long-term connections that fuel your growth journey. By joining forces with us, you gain access to a dedicated team committed to empowering your business with cutting-edge technology solutions.
             </p>
-            <p className="text-[#999999]">
+            <p className="text-[#999999] text-lg  text-justify">
               Together, we'll accelerate your growth and deliver unparalleled value to your customers. Partner with Inventree today and unlock the potential for success like never before.
             </p>
           </div>
@@ -60,12 +60,12 @@ export default function Home() {
           <h1 className="text-3xl font-bold mb-16 text-[#1BB275] ">Our AI Powered Dashboard</h1>
           <div className="flex items-center justify-center flex-wrap gap-16">
             <div className="flex flex-col gap-16 flex-wrap">
-              <div className="bg-zinc-700 h-40 w-[30rem] rounded-lg p-4 "></div>
-              <div className="bg-zinc-700 h-40 w-[30rem] rounded-lg p-4 mt-4"></div>
+              <div className="bg-[#D9D9D9] h-40 w-[30rem] rounded-lg p-4 "></div>
+              <div className="bg-[#D9D9D9] h-40 w-[30rem] rounded-lg p-4 mt-4"></div>
             </div>
             <div className="flex flex-col gap-16 flex-wrap">
-              <div className="bg-zinc-700 h-40 w-[30rem] rounded-lg p-4"></div>
-              <div className="bg-zinc-700 h-40 w-[30rem] rounded-lg p-4 mt-4"></div>
+              <div className="bg-[#D9D9D9] h-40 w-[30rem] rounded-lg p-4"></div>
+              <div className="bg-[#D9D9D9] h-40 w-[30rem] rounded-lg p-4 mt-4"></div>
             </div>
           </div>
 

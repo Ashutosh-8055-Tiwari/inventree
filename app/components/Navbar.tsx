@@ -17,11 +17,11 @@ export const Navbar = () => {
           <Image src={image1} alt="" height={110} width={110} />
         </div>
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-          <Link href={"/"} className="nav-item w-[7rem] text-[14.25px] bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">Home Page</Link>
-          <Link href="/pages/products" className="nav-item w-[7rem] text-[14.25px] bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">Products</Link>
-          <Link href={"/pages/about-us"} className="nav-item w-[7rem] text-[14.25px] bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">About Us</Link>
-          <Link href={"/pages/contact-us"} className="nav-item w-[7rem] text-[14.25px] bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">Contact Us</Link>
-          <Link href={"/pages/partner-with-us"} className="nav-item w-[7rem] text-[14.25px] bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">Partner with us</Link>
+          <Link href={"/"} className="nav-item w-[7.5rem] text-lg  bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">Home Page</Link>
+          <Link href="/pages/products" className="nav-item w-[7.5rem] text-lg  bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">Products</Link>
+          <Link href={"/pages/about-us"} className="nav-item w-[7.5rem] text-lg  bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">About Us</Link>
+          <Link href={"/pages/contact-us"} className="nav-item w-[7.5rem] text-lg  bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">Contact Us</Link>
+          <Link href={"/pages/partner-with-us"} className="nav-item w-[8rem] text-lg  bg-black text-white flex justify-center items-center rounded-sm hover:cursor-pointer">Partner with us</Link>
           <div>
             <Image src={image2} alt="" width={45} height={35} className="cursor-pointer hidden md:block" />
           </div>

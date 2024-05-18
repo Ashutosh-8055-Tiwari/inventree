@@ -13,17 +13,17 @@ import image10 from "../../public/assets/418d24ef0d3fd365ac02c6dc32f86ba2.png";
 export default function Widget() {
     return (
         <div className="flex overflow-hidden bg-[#D7E1E9] py-5 h-[82px]">
-            <div id="carousel" className="flex animate-scroll space-x-10">
-            <Image src={image1} alt="Samsung" width={100} height={100} />
-                <Image src={image2} alt="Microsoft" width={100} height={100} />
-                <Image src={image3} alt="Dell" width={100} height={100} />
-                <Image src={image4} alt="Apple" width={100} height={100} />
-                <Image src={image5} alt="HP" width={100} height={100} />
-                <Image src={image6} alt="Microsoft" width={100} height={100} />
-                <Image src={image7} alt="Lenovo" width={100} height={100} />
-                <Image src={image8} alt="Asus" width={100} height={100} />
-                <Image src={image9} alt="AMD" width={100} height={100} />
-                <Image src={image10} alt="BenQ" width={100} height={100} />
+            <div id="carousel" className="flex animate-scroll space-x-10 justify-center items-center">
+            <Image src={image1} alt="Samsung"  className="w-[5rem] h-[4rem]" />
+                <Image src={image2} alt="Microsoft" className="w-[5rem] h-[4rem]" />
+                <Image src={image3} alt="Dell" className="w-[5rem] h-[4rem]" />
+                <Image src={image4} alt="Apple" className="w-[5rem] h-[4rem]" />
+                <Image src={image5} alt="HP" className="w-[5rem] h-[4rem]" />
+                <Image src={image6} alt="Microsoft" className="w-[5rem] h-[4rem]" />
+                <Image src={image7} alt="Lenovo" className="w-[5rem] h-[4rem]" />
+                <Image src={image8} alt="Asus" className="w-[5rem] h-[4rem]" />
+                <Image src={image9} alt="AMD" className="w-[5rem] h-[4rem]" />
+                <Image src={image10} alt="BenQ" className="w-[5rem] h-[4rem]" />
             </div>
             <style jsx>{`
                 @keyframes scroll {

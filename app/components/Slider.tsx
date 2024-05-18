@@ -21,7 +21,7 @@ const slideImages = [
 
 export const Slider = () => {
   return (
-    <div className="slide-container font-poppins">
+    <div className="slide-container font-poppins bg-slate-200 mt-16">
       <Slide>
         {slideImages.map((slideImage, index)=> (
           <div key={index} className='flex justify-center mt-8 p-4 sm:mt-14 sm:p-10'>
@@ -30,7 +30,7 @@ export const Slider = () => {
                 <div className="bg-[#A26CFA] text-white px-2 py-1 rounded h-[2rem] sm:h-[3rem] w-[10rem] sm:w-[15rem] -z-5 mb-4 sm:mb-8" style={{transform: 'rotate(-3deg)'}}>
                 </div>
                 <div className="flex gap-4 sm:gap-10 absolute text-black top-0 left-[25%] sm:left-[30%]">
-                  <GoDotFill className="text-3xl sm:text-4xl" />
+                  <GoDotFill className="text-3xl md:text-4xl" />
                   <div className="text-3xl sm:text-4xl font-black">Explore</div>
                 </div>
                 <h1 className="text-3xl sm:text-4xl font-black">
